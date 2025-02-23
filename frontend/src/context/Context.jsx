@@ -17,6 +17,7 @@ export const AppContextProvider = ({children}) =>{
 
         try{
             const {data} = await axios.get(backendurl + "/api/doctors/list");
+            console.log(data)
             if(data.success){
                 setdoctors(data.doctors);
             }
