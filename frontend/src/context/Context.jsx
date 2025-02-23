@@ -12,6 +12,7 @@ export const AppContextProvider = ({children}) =>{
     const[doctors , setdoctors] = useState([]);
     const[userdata ,setuserdata] = useState(false);
     const backendurl = import.meta.env.VITE_BACKEND_URL;
+    console.log(backendurl)
 
     const getdoctorsdata = async() =>{
 
