@@ -6,5 +6,6 @@ export default defineConfig({
   
   plugins: [react() , tailwindcss()],
   content: ["./src/**/*.{html,js,jsx}"],
+  base: './',
   server:{port:5173},  
 })
