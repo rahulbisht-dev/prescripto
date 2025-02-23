@@ -25,6 +25,7 @@ const changeavailablity = async(req , res) =>{
 const doctorlist = async(req , res) =>{
     try{
         const doctors = await doctorModel.find().select(['-password' , '-email']);
+        console.log(doctors);
         res.send({success:true , doctors})
         
     }
